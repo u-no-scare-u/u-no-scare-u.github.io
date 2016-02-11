@@ -9,7 +9,7 @@ sound.volume = 1;
 sound.loop = true;
 sound.play();
 var shriek = new Audio('/shriek.wav');
-shriek.volume = 50;
+shriek.volume = 0.5;
 var map = [                      //
 		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2],
 		[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2],
@@ -32,7 +32,7 @@ var map = [                      //
 	mapH = map[0].length;
 
 // Semi-constants
-var WIDTH = window.innerWidth;
+var WIDTH = window.innerWidth,
 	HEIGHT = window.innerHeight,
 	ASPECT = WIDTH / HEIGHT,
 	UNITSIZE = 250,
